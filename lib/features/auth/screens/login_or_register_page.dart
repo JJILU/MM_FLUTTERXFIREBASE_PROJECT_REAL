@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:firebase_app/features/auth/screens/login_page.dart';
 import 'package:firebase_app/features/auth/screens/register_page.dart';
-import 'package:flutter/material.dart';
+
 
 class LoginOrRegisterPage extends StatefulWidget {
   const LoginOrRegisterPage({super.key});
@@ -25,7 +26,7 @@ class _LoginOrRegisterPageState extends State<LoginOrRegisterPage> {
     if (showLoginPage) {
       return LoginPage(onTap: togglePages);
     } else {
-      return RegisterPage(onTap: togglePages,);
+      return RegisterPage(onTap: togglePages);
     }
   }
 }
